@@ -14,7 +14,7 @@ NetPulse is a lightweight PowerShell-based network diagnostic tool.
 
 \- Ping or Tracert mode
 
-\- Ping count selection (10  30  50  100  Infinite)
+\- Ping count selection (10  30  50  100  200  Infinite)
 
 \- Infinite mode supports press Q to stop
 
@@ -28,10 +28,63 @@ NetPulse is a lightweight PowerShell-based network diagnostic tool.
 
 &nbsp; - TTL
 
-\- Optional CSV export
 
 
 
+## Usage
+
+### 1️⃣ Download
+
+Download `NetPulse.ps1` from the **Releases** page.
+
+### 2️⃣ Run the script
+
+Open PowerShell in the folder and run:
+
+```
+.\NetPulse.ps1
+```
+
+If PowerShell blocks the script, you can allow scripts temporarily:
+
+```
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+### 3️⃣ Enter target
+
+Input the IP address or domain you want to test.
+
+Example:
+
+```
+8.8.8.8
+google.com
+```
+
+### 4️⃣ Select ping count
+
+Choose one of the preset options:
+
+```
+1) 10
+2) 30
+3) 50
+4) 100
+5) 200
+6) Infinite (-t)
+```
+
+Infinite mode can be stopped by pressing **Q**.
+
+### 5️⃣ View results
+
+NetPulse will display:
+
+* Latency (colorized)
+* Packet loss %
+* Min / Max / Avg latency
+* TTL
 ---
 
 
@@ -86,3 +139,11 @@ git clone https://github.com/zhikai060/Net-Pulse.git
 
 Made with PowerShell 
 
+Example Output
+===== NetPulse Summary =====
+Target: 8.8.8.8
+Packets: Sent = 10, Received = 9, Lost = 1 (10%)
+
+Min = 18 ms
+Max = 42 ms
+Avg = 26 ms
