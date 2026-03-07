@@ -14,7 +14,7 @@ NetPulse is a lightweight PowerShell-based network diagnostic tool.
 
 \- Ping or Tracert mode
 
-\- Ping count selection (10  30  50  100  Infinite)
+\- Ping count selection (10  30  50  100  200  Infinite)
 
 \- Infinite mode supports press Q to stop
 
