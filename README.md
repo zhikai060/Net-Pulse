@@ -139,3 +139,11 @@ git clone https://github.com/zhikai060/Net-Pulse.git
 
 Made with PowerShell 
 
+Example Output
+===== NetPulse Summary =====
+Target: 8.8.8.8
+Packets: Sent = 10, Received = 9, Lost = 1 (10%)
+
+Min = 18 ms
+Max = 42 ms
+Avg = 26 ms
