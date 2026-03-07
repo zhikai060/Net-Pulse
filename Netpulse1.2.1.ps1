@@ -5,6 +5,7 @@ New:
 - Colorized latency display
 - Full summary block
 - Ping count presets (10 / 30 / 50 / 100 / 200 / -t infinite)
+- Tracert mode
 #>
 
 param()
@@ -14,6 +15,19 @@ function Show-Header {
     Write-Host "===============================" -ForegroundColor Cyan
     Write-Host "        NetPulse v1.2" -ForegroundColor Green
     Write-Host "===============================" -ForegroundColor Cyan
+}
+
+function Select-Mode {
+
+    Write-Host "Select mode:" -ForegroundColor Yellow
+    Write-Host "1) Ping"
+    Write-Host "2) Tracert"
+
+    $choice = Read-Host "Choose (1-2)"
+
+    if ($choice -eq "2") { return "tracert" }
+
+    return "ping"
 }
 
 function Select-PingCount {
@@ -163,7 +177,7 @@ function Invoke-PingTest($target, $count) {
     }
 }
 
-function Run-SingleTest {
+function Run-PingMode {
 
     $target = Read-Host "Enter IP or domain"
 
@@ -186,9 +200,29 @@ function Run-SingleTest {
     Write-Host "=============================" -ForegroundColor Cyan
 }
 
+function Run-TracertMode {
+
+    $target = Read-Host "Enter IP or domain"
+
+    Write-Host "`nRunning tracert..." -ForegroundColor Yellow
+
+    tracert $target
+}
+
 Show-Header
 
-Run-SingleTest
+$mode = Select-Mode
+
+if ($mode -eq "tracert") {
+
+    Run-TracertMode
+
+}
+else {
+
+    Run-PingMode
+
+}
 
 Write-Host "`nPress Enter to exit..." -ForegroundColor DarkGray
 
