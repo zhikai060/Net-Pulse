@@ -2,7 +2,9 @@
 
 
 
-NetPulse is a lightweight PowerShell-based network diagnostic tool.
+NetPulse is a lightweight **Windows network diagnostic CLI tool** written in PowerShell.
+
+It provides fast **Ping and Traceroute diagnostics** with real-time statistics and interactive controls.
 
 
 
