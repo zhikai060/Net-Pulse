@@ -29,9 +29,9 @@ NetPulse is a lightweight PowerShell-based network diagnostic tool.
 &nbsp; - TTL
 
 
+## Screenshot
 
-
-## Usage
+![NetPulse Example](Example.png)## Usage
 
 ### 1️⃣ Download
 
