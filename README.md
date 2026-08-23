@@ -25,6 +25,8 @@ It provides fast **Ping and Traceroute diagnostics** with real-time statistics a
 
 \- Timestamp for each result line
 
+\- Color display latency rating
+
 &nbsp; - Min latency
 
 &nbsp; - Max latency
@@ -32,7 +34,6 @@ It provides fast **Ping and Traceroute diagnostics** with real-time statistics a
 &nbsp; - Average latency
 
 &nbsp; - TTL
-
 
 ## Screenshot
 
