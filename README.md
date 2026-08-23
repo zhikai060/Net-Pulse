@@ -1,4 +1,4 @@
-\# 🚀 WinNetPulse
+# 🚀 WinNetPulse
 
 ![Windows](https://img.shields.io/badge/platform-Windows-blue)
 ![PowerShell](https://img.shields.io/badge/language-PowerShell-darkblue)
@@ -106,7 +106,7 @@ WinNetPulse will display:
 * TTL
 ---
 
-\## Installation
+## Installation
 
 Download the latest release from the **Releases** section  
 or clone the repository:
@@ -115,7 +115,7 @@ or clone the repository:
 git clone https://github.com/zhikai060/WinNetPulse.git
 ```
 
-\## Requirements
+## Requirements
 
 
 
@@ -124,22 +124,6 @@ git clone https://github.com/zhikai060/WinNetPulse.git
 \- Windows Server 2016 or newer
 
 \- PowerShell 5.1+
-
-
-
-
-
-\## Roadmap
-
-
-
-\- CLI parameter support (non-interactive mode)
-
-\- Colorized latency display
-
-\- Optional no-clear / interactive modes
-
-\- Parameter-based CLI execution
 
 
 ---
