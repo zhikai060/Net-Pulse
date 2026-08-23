@@ -119,7 +119,7 @@ git clone https://github.com/zhikai060/WinNetPulse.git
 
 
 
-\- Windows 10 Version 1607 or newer / 11
+\- Windows 10 Version 1607 or newer / Windows 11
 
 \- Windows Server 2016 or newer
 
